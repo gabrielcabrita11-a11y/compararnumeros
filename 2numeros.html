@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style2.css'>
+    <script src='script2.js'></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Comparador de Números</h1>
+        <p class="description">Insira dois números para compará-los e descubra qual é maior, menor ou se são iguais.</p>
+        
+        <form id="comparator-form">
+            <div class="input-group">
+                <label for="number1">Primeiro Número:</label>
+                <input type="number" id="number1" step="any" required>
+                <div class="error" id="error1">Por favor, insira um número válido.</div>
+            </div>
+            
+            <div class="input-group">
+                <label for="number2">Segundo Número:</label>
+                <input type="number" id="number2" step="any" required>
+                <div class="error" id="error2">Por favor, insira um número válido.</div>
+            </div>
+            
+            <div class="buttons">
+                <button type="submit" class="compare-btn">Comparar</button>
+                <button type="button" class="reset-btn" id="reset-btn">Limpar</button>
+            </div>
+        </form>
+        
+        <div class="result" id="result">
+            <h3>Resultado da Comparação</h3>
+            <div class="result-item">
+                <span class="result-label">Maior número:</span>
+                <span class="result-value" id="maior"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Menor número:</span>
+                <span class="result-value" id="menor"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Números iguais:</span>
+                <span class="result-value" id="iguais"></span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Todos diferentes:</span>
+                <span class="result-value" id="diferentes"></span>
+            </div>
+        </div>
+        
+        <div class="toggle-mode">
+            <button class="toggle-btn" id="toggle-btn">Comparar 3 números</button>
+        </div>
+    </div>
+
+</body>
+</html>
